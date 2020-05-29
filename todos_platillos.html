@@ -1,0 +1,277 @@
+﻿<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="ITVH">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Plantilla Bootstrap 4</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="vendor/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+
+    <header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <img src="resources/img/chef.png" width="30" height="30">
+    <a class="navbar-brand" href="#">"EL RECETARIO"</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="menu-administrador.html">INICIO <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AGREGAR
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="formulario_agregar_platillo.html">Agregar Platillo</a>
+          <a class="dropdown-item" href="formulario_agregar_ingrediente.html">Agregar Ingrediente</a>
+          <a class="dropdown-item" href="formulario_agregar_procedimiento.html">Agregar Procedimiento</a>
+          <a class="dropdown-item" href="formulario-agregar_usuario.html">Agregar Usuario</a>
+        </div>
+        </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ELIMINAR
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="formulario_eliminar_platillo.html">Eliminar Platillo</a>
+          <a class="dropdown-item" href="formulario_eliminar_procedimiento.html">Eliminar Procedimiento</a>
+          <a class="dropdown-item" href="formulario_eliminar_usuario.html">Eliminar Usuario</a>
+        </div>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MODIFICAR
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="formulario_modificar_usuario.html">Modificar Usuario</a>
+              <a class="dropdown-item" href="formulario_modificar_platillo.html">Modificar Platillos</a>
+            </div>
+            </li>
+
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              VER
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="todos_platillos.html">Todos los Platillos</a>
+              <a class="dropdown-item" href="formulario_modificar_platillo.html">Todos los Usuarios</a>
+            </div>
+            </li>
+
+      </ul>
+      <form class="form-inline mt-2 mt-md-0" action='index.html'>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Salir</button>
+      </form>
+    </div>
+  </nav>
+</header>
+<body>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+<div class="container">
+    <h2>todos los platillos</h3>
+    </center>
+    <table class="table" width=100%>
+<tr>
+  <td></td><td>Nombre del Platillo</td><td>Tiempo de Elaboracion</td><td>Porcion</td><td>Ingredientes</td><td>Procedimiento</td><td>Imagen</td>		  </tr>
+<tr>
+  <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+  <td>ALBONDIGAS</td><td>80 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>RES</P><P>QUESO</P><p>HUEVO</p></td><td><P>SE HACE PURE EL TOMATE</P><P>SE REVUELVE EL HUEVO Y LA CARNE</P><P>SE HACE BOLITAS</P><P>SE PONE EN UN RECIPIENTE Y SE ADORNA</P></td><td><img src="resources/img/RES1.jpg" width="100" height="100"></td>
+</tr>
+<tr>
+  <td><a href="#" data-src ="carnes.pdf"   data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+  <td>BISTEC A LA SOLDADERA</td><td>80 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>RES</P><P>QUESO</P><p>HUEVO</p></td><td><P>SE HACE PURE EL TOMATE</P><P>SE REVUELVE EL HUEVO Y LA CARNE</P><P>SE HACE BOLITAS</P><P>SE PONE EN UN RECIPIENTE Y SE ADORNA</P></td><td><img src="resources/img/RES2.jpg" width="100" height="100"></td>
+</tr>
+<tr>
+  <td><a href="#" data-src ="carnes.pdf"   data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+  <td>CHILES CAURESMEÑOS</td><td>80 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>RES</P><P>QUESO</P><p>HUEVO</p></td><td><P>SE HACE PURE EL TOMATE</P><P>SE REVUELVE EL HUEVO Y LA CARNE</P><P>SE HACE BOLITAS</P><P>SE PONE EN UN RECIPIENTE Y SE ADORNA</P></td><td><img src="resources/img/RES3.1.jpg" width="100" height="100"></td>
+</tr> 
+<tr>
+  <td><a href="#" data-src ="carnes.pdf"   data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+  <td>ESPAGUETI CON ALBONDIGAS</td><td>80 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>RES</P><P>QUESO</P><p>HUEVO</p></td><td><P>SE HACE PURE EL TOMATE</P><P>SE REVUELVE EL HUEVO Y LA CARNE</P><P>SE HACE BOLITAS</P><P>SE PONE EN UN RECIPIENTE Y SE ADORNA</P></td><td><img src="resources/img/RES4.jpg" width="100" height="100"></td>
+</tr>
+<tr>
+  <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+  <td>BISTEC CON PAPAS</td><td>80 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>RES</P><P>QUESO</P><p>HUEVO</p></td><td><P>SE HACE PURE EL TOMATE</P><P>SE REVUELVE EL HUEVO Y LA CARNE</P><P>SE HACE BOLITAS</P><P>SE PONE EN UN RECIPIENTE Y SE ADORNA</P></td><td><img src="resources/img/RES5.jpg" width="100" height="100"></td>
+</tr>                                
+<tr>
+  <td></td><td>Nombre del Platillo</td><td>Tiempo de Elaboracion</td><td>Porcion</td><td>Ingredientes</td><td>Procedimiento</td><td>Imagen</td>		  </tr>
+<tr>
+  <td><a href="#" data-src ="pescados.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+  <td>PASTEL DE JAIBA</td><td>100 MINUTOS</td><td>3 PERSONAS</td><td><P>JAIBA</P><p>AJO</p><P>ACEITE DE OLIVA</P><P>PIMIENTO</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PULPO</P><P>SE CORTA EL PIMIENTO</P><P>SE LE AGREGA PIMIENTO</P><P>SE PONE EN UN PLATO Y SE ADORNA/P></td><td><img src="resources/img/CRUSTACEO1.jpg" width="100" height="100"></td>
+</tr>                                 
+<tr>
+    <td><a href="#" data-src ="pescados.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+    <td>CENTOLLO RELLENO</td><td>100 MINUTOS</td><td>3 PERSONAS</td><td><P>JAIBA</P><p>AJO</p><P>ACEITE DE OLIVA</P><P>PIMIENTO</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PULPO</P><P>SE CORTA EL PIMIENTO</P><P>SE LE AGREGA PIMIENTO</P><P>SE PONE EN UN PLATO Y SE ADORNA/P></td><td><img src="resources/img/CRUSTACEO2.jpg" width="100" height="100"></td>
+  </tr>                                 
+  <tr>
+      <td><a href="#" data-src ="pescados.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+      <td>CANAPES RELLENOS</td><td>100 MINUTOS</td><td>3 PERSONAS</td><td><P>JAIBA</P><p>AJO</p><P>ACEITE DE OLIVA</P><P>PIMIENTO</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PULPO</P><P>SE CORTA EL PIMIENTO</P><P>SE LE AGREGA PIMIENTO</P><P>SE PONE EN UN PLATO Y SE ADORNA/P></td><td><img src="resources/img/CRUSTACEO3.jpg" width="100" height="100"></td>
+    </tr>                                 
+    <tr>
+        <td><a href="#" data-src ="pescados.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+        <td>CALDO DE NECROTA</td><td>100 MINUTOS</td><td>3 PERSONAS</td><td><P>JAIBA</P><p>AJO</p><P>ACEITE DE OLIVA</P><P>PIMIENTO</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PULPO</P><P>SE CORTA EL PIMIENTO</P><P>SE LE AGREGA PIMIENTO</P><P>SE PONE EN UN PLATO Y SE ADORNA/P></td><td><img src="resources/img/CRUSTACEO4.jpg" width="100" height="100"></td>
+      </tr>                                 
+      <tr>
+          <td><a href="#" data-src ="pescados.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+          <td>ARROZ CON NEGROTA</td><td>100 MINUTOS</td><td>3 PERSONAS</td><td><P>JAIBA</P><p>AJO</p><P>ACEITE DE OLIVA</P><P>PIMIENTO</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PULPO</P><P>SE CORTA EL PIMIENTO</P><P>SE LE AGREGA PIMIENTO</P><P>SE PONE EN UN PLATO Y SE ADORNA/P></td><td><img src="resources/img/CRUSTACEO5.jpg" width="100" height="100"></td>
+        </tr>                                 
+        <tr>
+          <td><a href="#" data-src ="recetario_ensaladas.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+          <td>ENSALADA MIXTA</td><td>30 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>CEBOLLA</P><P>QUESO</P><p>JAMON</p></td><td><P>SE CORTA LA LECHUGA</P><P>SE CORTA EL TOMATE</P><P>SE CORTA LA CEBOLLA</P><P>SE PONE EN UN RECIPIENTE Y SE MEZCLA</P></td><td><img src="resources/img/ensalada_mixta.jpg" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-src ="recetario_ensaladas.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+            <td>ENSALADA DE PASTA</td><td>30 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>CEBOLLA</P><P>QUESO</P><p>JAMON</p></td><td><P>SE CORTA LA LECHUGA</P><P>SE CORTA EL TOMATE</P><P>SE CORTA LA CEBOLLA</P><P>SE PONE EN UN RECIPIENTE Y SE MEZCLA</P></td><td><img src="resources/img/ensalada2.jpg" width="100" height="100"></td>
+          </tr>
+          <tr>
+              <td><a href="#" data-src ="recetario_ensaladas.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+              <td>ENSALADA CREPECE</td><td>30 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>CEBOLLA</P><P>QUESO</P><p>JAMON</p></td><td><P>SE CORTA LA LECHUGA</P><P>SE CORTA EL TOMATE</P><P>SE CORTA LA CEBOLLA</P><P>SE PONE EN UN RECIPIENTE Y SE MEZCLA</P></td><td><img src="resources/img/ensalada3.jpg" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td><a href="#" data-src ="recetario_ensaladas.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                <td>ENSALADA WLADORF</td><td>30 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>CEBOLLA</P><P>QUESO</P><p>JAMON</p></td><td><P>SE CORTA LA LECHUGA</P><P>SE CORTA EL TOMATE</P><P>SE CORTA LA CEBOLLA</P><P>SE PONE EN UN RECIPIENTE Y SE MEZCLA</P></td><td><img src="resources/img/ensalada4.jpg" width="100" height="100"></td>
+              </tr>
+              <tr>
+                  <td><a href="#" data-src ="recetario_ensaladas.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                  <td>ENSALADA OLIVIER</td><td>30 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>CEBOLLA</P><P>QUESO</P><p>JAMON</p></td><td><P>SE CORTA LA LECHUGA</P><P>SE CORTA EL TOMATE</P><P>SE CORTA LA CEBOLLA</P><P>SE PONE EN UN RECIPIENTE Y SE MEZCLA</P></td><td><img src="resources/img/ensalada5.jpg" width="100" height="100"></td>
+                </tr>
+                <tr>
+                    <td><a href="#" data-src ="recetario_ensaladas.pdf"   data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                    <td>ENSALADA COLESLAW</td><td>30 MINUTOS</td><td>2 PERSONAS</td><td><P>TOMATE</P><p>LECHUGA</p><P>CEBOLLA</P><P>QUESO</P><p>JAMON</p></td><td><P>SE CORTA LA LECHUGA</P><P>SE CORTA EL TOMATE</P><P>SE CORTA LA CEBOLLA</P><P>SE PONE EN UN RECIPIENTE Y SE MEZCLA</P></td><td><img src="resources/img/ensalada6.jpg" width="100" height="100"></td>
+                  </tr>
+                  <tr>
+                    <td></td><td>Nombre del Platillo</td><td>Tiempo de Elaboracion</td><td>Porcion</td><td>Ingredientes</td><td>Procedimiento</td><td>Imagen</td>		  </tr>
+                  <tr>
+                    <td><a href="#" data-src ="pescados.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                    <td>FILETE DE PESCADO</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PESCADO</P><p>ARROZ</p><P>CILANTRO</P><P>LECHUGA</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PESCADO</P><P>SE CORTA EL CILANTRO</P><P>SE PREPARA EL ARROZ</P><P>SE PONE EN UN PLATO Y SE ACOPAÑA DE ARROZ</P></td><td><img src="resources/img/PESCADO1.jpg" width="100" height="100"></td>
+                  </tr>                                 
+                  <tr>
+                      <td><a href="#" data-src ="pescados.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                      <td>PESCADO VERACRUZANO</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PESCADO</P><p>ARROZ</p><P>CILANTRO</P><P>LECHUGA</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PESCADO</P><P>SE CORTA EL CILANTRO</P><P>SE PREPARA EL ARROZ</P><P>SE PONE EN UN PLATO Y SE ACOPAÑA DE ARROZ</P></td><td><img src="resources/img/PESCADO2.jpg" width="100" height="100"></td>
+                    </tr>                                 
+                    <tr>
+                        <td><a href="#" data-src ="pescados.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                        <td>PESCADO ASADO</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PESCADO</P><p>ARROZ</p><P>CILANTRO</P><P>LECHUGA</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PESCADO</P><P>SE CORTA EL CILANTRO</P><P>SE PREPARA EL ARROZ</P><P>SE PONE EN UN PLATO Y SE ACOPAÑA DE ARROZ</P></td><td><img src="resources/img/PESCADO3.jpg" width="100" height="100"></td>
+                      </tr>                                 
+                      <tr>
+                          <td><a href="#" data-src ="pescados.pdf"   data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                          <td>PESCADO EMPAPELADO</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PESCADO</P><p>ARROZ</p><P>CILANTRO</P><P>LECHUGA</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PESCADO</P><P>SE CORTA EL CILANTRO</P><P>SE PREPARA EL ARROZ</P><P>SE PONE EN UN PLATO Y SE ACOPAÑA DE ARROZ</P></td><td><img src="resources/img/PESCADO4.jpg" width="100" height="100"></td>
+                        </tr>                                 
+                        <tr>
+                            <td><a href="#" data-src ="pescados.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                            <td>PESCADO EN SALSA DE NARANJA</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PESCADO</P><p>ARROZ</p><P>CILANTRO</P><P>LECHUGA</P><p>LIMON</p></td><td><P>SE CORTA Y FRIE EL PESCADO</P><P>SE CORTA EL CILANTRO</P><P>SE PREPARA EL ARROZ</P><P>SE PONE EN UN PLATO Y SE ACOPAÑA DE ARROZ</P></td><td><img src="resources/img/PESCADO5.jpg" width="100" height="100"></td>
+                          </tr>                            
+                          <tr>
+				<td></td><td>Nombre del Platillo</td><td>Tiempo de Elaboracion</td><td>Porcion</td><td>Ingredientes</td><td>Procedimiento</td><td>Imagen</td>		  </tr>
+		  <tr>
+			  <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+			  <td>PECHUGA CON VERDURAS</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/POLLO1.jpg" width="100" height="100"></td>
+      </tr>
+      <tr>
+        <tr>
+          <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+          <td>POLLO AGRIDULCE</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/POLLO2.jpg" width="100" height="100"></td>
+        </tr>
+        <tr>
+          <tr>
+            <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+            <td>FAJITA DE POLLO</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/POLLO3.jpg" width="100" height="100"></td>
+          </tr>
+          <tr>
+            <tr>
+              <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+              <td>POLLO A LA MOSTAZA</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/POLLO4.jpg" width="100" height="100"></td>
+            </tr>
+            <tr>
+              <tr>
+                <td><a href="#" data-src ="carnes.pdf"   data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                <td>POLLO A LA JARDINERA</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/PULPO5.jpg" width="100" height="100"></td>
+              </tr>
+              <tr><tr>
+                <td></td><td>Nombre del Platillo</td><td>Tiempo de Elaboracion</td><td>Porcion</td><td>Ingredientes</td><td>Procedimiento</td><td>Imagen</td>		  </tr>
+              <tr>
+                <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                <td>PECHUGA CON VERDURAS</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/POLLO1.jpg" width="100" height="100"></td>
+              </tr>
+              <tr>
+                <tr>
+                  <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                  <td>POLLO AGRIDULCE</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/POLLO2.jpg" width="100" height="100"></td>
+                </tr>
+                <tr>
+                  <tr>
+                    <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                    <td>FAJITA DE POLLO</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/POLLO3.jpg" width="100" height="100"></td>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <td><a href="#" data-src ="carnes.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                      <td>POLLO A LA MOSTAZA</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/POLLO4.jpg" width="100" height="100"></td>
+                    </tr>
+                    <tr>
+                      <tr>
+                        <td><a href="#" data-src ="carnes.pdf"   data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                        <td>POLLO A LA JARDINERA</td><td>60 MINUTOS</td><td>2 PERSONAS</td><td><P>PECHUGA</P><p>LECHUGA</p><P>RES</P><P>ARROZ</P><p>PAPA</p></td><td><P>SE HACE FRIE LA PECHUGA</P><P>SE PICA LA LECHUGA</P><P>SE HACE EL ARROZ</P><P>SE PONE EN UN RECIPIENTE PONE TODO JUNTO</P></td><td><img src="resources/img/PULPO5.jpg" width="100" height="100"></td>
+                      </tr>
+                          <tr>
+                              <td></td><td>Nombre del Postre</td><td>Tiempo de Elaboracion</td><td>Porcion</td><td>Ingredientes</td><td>Procedimiento</td><td>Imagen</td>		  </tr>
+                            <tr>
+                              <td><a href="#" data-src ="postres.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                              <td>POSTRE DE CAFE</td><td>30 MINUTOS</td><td>6 PERSONAS</td><td><P>CAFE</P><p>LECHE</p><P>CANELA</P><P>GRENETINA</P></td><td><P>SE HIERVE LA GRENETINA CON LA LECHE</P><P>SE AGREGA EL CAFE</P><P>SE AGREGA LA CANELA</P><P>SE PONE EN UN RECIPIENTE Y SE DECORA</P></td><td><img src="resources/img/POSTRE1.jpg" width="100" height="100"></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#" data-src ="postres.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                              <td>PASTEL FRIO</td><td>30 MINUTOS</td><td>6 PERSONAS</td><td><P>CAFE</P><p>LECHE</p><P>CANELA</P><P>GRENETINA</P></td><td><P>SE HIERVE LA GRENETINA CON LA LECHE</P><P>SE AGREGA EL CAFE</P><P>SE AGREGA LA CANELA</P><P>SE PONE EN UN RECIPIENTE Y SE DECORA</P></td><td><img src="resources/img/POSTRE2.jpg" width="100" height="100"></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#" data-src ="postres.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                              <td>PAY DE LECHE</td><td>30 MINUTOS</td><td>6 PERSONAS</td><td><P>CAFE</P><p>LECHE</p><P>CANELA</P><P>GRENETINA</P></td><td><P>SE HIERVE LA GRENETINA CON LA LECHE</P><P>SE AGREGA EL CAFE</P><P>SE AGREGA LA CANELA</P><P>SE PONE EN UN RECIPIENTE Y SE DECORA</P></td><td><img src="resources/img/POSTRE3.jpg" width="100" height="100"></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#" data-src ="postres.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                              <td>FLAN</td><td>30 MINUTOS</td><td>6 PERSONAS</td><td><P>CAFE</P><p>LECHE</p><P>CANELA</P><P>GRENETINA</P></td><td><P>SE HIERVE LA GRENETINA CON LA LECHE</P><P>SE AGREGA EL CAFE</P><P>SE AGREGA LA CANELA</P><P>SE PONE EN UN RECIPIENTE Y SE DECORA</P></td><td><img src="resources/img/POSTRE4.jpg" width="100" height="100"></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#" data-src ="postres.pdf"    data-toggle="modal" data-target="#print-modal">   <i class="fas  fa-print"></i></a></td>
+                              <td>GELATINA</td><td>30 MINUTOS</td><td>6 PERSONAS</td><td><P>CAFE</P><p>LECHE</p><P>CANELA</P><P>GRENETINA</P></td><td><P>SE HIERVE LA GRENETINA CON LA LECHE</P><P>SE AGREGA EL CAFE</P><P>SE AGREGA LA CANELA</P><P>SE PONE EN UN RECIPIENTE Y SE DECORA</P></td><td><img src="resources/img/POSTRE5.jpg" width="100" height="100"></td>
+                            </tr>                 
+
+
+</div>
+
+</main>
+
+
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">Copyright &copy; Instituto Tecnológico de Villahermosa</span>
+  </div>
+</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="vendor/bootstrap/js/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+﻿<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="ITVH">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Plantilla Bootstrap 4</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="vendor/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+
+    <header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <img src="resources/img/chef.png" width="30" height="30">
+    <a class="navbar-brand" href="#">"EL RECETARIO"</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="menu-administrador.html">INICIO <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AGREGAR
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="formulario_agregar_platillo.html">Agregar Platillo</a>
+          <a class="dropdown-item" href="formulario_agregar_ingrediente.html">Agregar Ingrediente</a>
+          <a class="dropdown-item" href="formulario_agregar_procedimiento.html">Agregar Procedimiento</a>
+          <a class="dropdown-item" href="formulario-agregar_usuario.html">Agregar Usuario</a>
+        </div>
+        </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ELIMINAR
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="formulario_eliminar_platillo.html">Eliminar Platillo</a>
+          <a class="dropdown-item" href="formulario_eliminar_procedimiento.html">Eliminar Procedimiento</a>
+          <a class="dropdown-item" href="formulario_eliminar_usuario.html">Eliminar Usuario</a>
+        </div>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MODIFICAR
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="formulario_modificar_usuario.html">Modificar Usuario</a>
+              <a class="dropdown-item" href="formulario_modificar_platillo.html">Modificar Platillos</a>
+            </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                GRAFICAS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="grafica mas acceso.html">ADMINISTRADORES CON MAS ACCESO A LA PLATAFORMA</a>
+                <a class="dropdown-item" href="grafica menos acceso.html">ADMINISTRADORES CON MENOS ACCESO A LA PLATAFORMA</a>
+              </div>
+              </li>
+
+
+      </ul>
+      <form class="form-inline mt-2 mt-md-0" action='index.html'>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Salir</button>
+      </form>
+    </div>
+  </nav>
+</header>
+<body>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+
+    <div class="container">
+      <!-- Example row of columns -->
+		<div class="row">
+			<div class="col-lg-12">
+		<br>&nbsp;
+
+            <h2>ADMINISTRADOR CON MENOS ACCESO</h2>
+            <head>
+              <title>Bar Chart</title>
+              <script src="vendor/chartjs/Chart.bundle.js"></script>
+              <script src="vendor/chartjs/samples/utils.js"></script>
+              <style>
+              canvas {
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+              }
+              </style>
+            </head>
+            
+            <body>
+              <div id="container" style="width: 75%;">
+                <canvas id="canvas"></canvas>
+              <script>
+                var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                var color = Chart.helpers.color;
+                var barChartData = {
+                  labels: ['ENERO', 'FEBRERO', 'MARZO', 'ABRIL', 'MAYO', 'JUNIO', 'JULIO'],
+                  datasets: [{
+                    label: 'OSCAR22',
+                    backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+                    borderColor: window.chartColors.red,
+                    borderWidth: 1,
+                    data: [
+                      10,
+                      02,
+                      3,
+                      12,
+                      14,
+                      1, 
+                      6, 
+                    ]
+                  }, {
+                    label: 'ANA231',
+                    backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+                    borderColor: window.chartColors.blue,
+                    borderWidth: 1,
+                    data: [
+                     2,
+                     4,
+                     13,
+                     11,
+                     4,
+                     9,
+                     5,
+                    ]
+                  }]
+            
+                };
+            
+                window.onload = function() {
+                  var ctx = document.getElementById('canvas').getContext('2d');
+                  window.myBar = new Chart(ctx, {
+                    type: 'bar',
+                    data: barChartData,
+                    options: {
+                      responsive: true,
+                      legend: {
+                        position: 'top',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Chart.js Bar Chart'
+                      }
+                    }
+                  });
+            
+                };
+            
+                document.getElementById('randomizeData').addEventListener('click', function() {
+                  var zero = Math.random() < 0.2 ? true : false;
+                  barChartData.datasets.forEach(function(dataset) {
+                    dataset.data = dataset.data.map(function() {
+                      return zero ? 0.0 : randomScalingFactor();
+                    });
+            
+                  });
+                  window.myBar.update();
+                });
+            
+                var colorNames = Object.keys(window.chartColors);
+                document.getElementById('addDataset').addEventListener('click', function() {
+                  var colorName = colorNames[barChartData.datasets.length % colorNames.length];
+                  var dsColor = window.chartColors[colorName];
+                  var newDataset = {
+                    label: 'Dataset ' + (barChartData.datasets.length + 1),
+                    backgroundColor: color(dsColor).alpha(0.5).rgbString(),
+                    borderColor: dsColor,
+                    borderWidth: 1,
+                    data: []
+                  };
+            
+                  for (var index = 0; index < barChartData.labels.length; ++index) {
+                    newDataset.data.push(randomScalingFactor());
+                  }
+            
+                  barChartData.datasets.push(newDataset);
+                  window.myBar.update();
+                });
+            
+                document.getElementById('addData').addEventListener('click', function() {
+                  if (barChartData.datasets.length > 0) {
+                    var month = MONTHS[barChartData.labels.length % MONTHS.length];
+                    barChartData.labels.push(month);
+            
+                    for (var index = 0; index < barChartData.datasets.length; ++index) {
+                      // window.myBar.addData(randomScalingFactor(), index);
+                      barChartData.datasets[index].data.push(randomScalingFactor());
+                    }
+            
+                    window.myBar.update();
+                  }
+                });
+            
+                document.getElementById('removeDataset').addEventListener('click', function() {
+                  barChartData.datasets.pop();
+                  window.myBar.update();
+                });
+            
+                document.getElementById('removeData').addEventListener('click', function() {
+                  barChartData.labels.splice(-1, 1); // remove the label first
+            
+                  barChartData.datasets.forEach(function(dataset) {
+                    dataset.data.pop();
+                  });
+            
+                  window.myBar.update();
+                });
+              </script>
+            </body>
+           
+            
+            
+
+          </div>
+		</div>
+
+
+    </div> <!-- /container -->
+
+</main>
+
+
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">Copyright &copy; Instituto Tecnológico de Villahermosa</span>
+  </div>
+</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="vendor/bootstrap/js/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
